@@ -116,8 +116,7 @@ if name == '__main__':
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host,int(port)))
 		s.settimeout(1)
-	except socket.error as
-e:
+	except socket.error ase:
 		print("\033[91mcheck server ip and port\033[0m")
 		usage()
 	while True:
